@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #000000;
+  --foreground: #ffffff;
 }
 
 @theme inline {
@@ -14,8 +14,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #000000;
+    --foreground: #ffffff;
   }
 }
 
@@ -26,12 +26,13 @@ html, body {
 }
 
 body {
-  background: var(--background);
+  background: #000000;
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Enhanced animated aurora gradient layers - 25% more intense */
+/* Enhanced animated aurora gradient layers - 25% more intense - COMMENTED OUT FOR BLACK BACKGROUND */
+/*
 .bg-aurora-layer-1 {
   background:
     radial-gradient(1000px 800px at 10% 20%, rgba(120, 73, 239, 0.375), transparent 50%),
@@ -54,8 +55,10 @@ body {
   animation: auroraFloat3 25s ease-in-out infinite alternate;
   opacity: 0.75;
 }
+*/
 
-/* Floating particles overlay - 25% more intense */
+/* Floating particles overlay - 25% more intense - COMMENTED OUT FOR BLACK BACKGROUND */
+/*
 .bg-particles {
   background-image: 
     radial-gradient(2px 2px at 20% 30%, rgba(255, 255, 255, 0.375), transparent),
@@ -67,6 +70,7 @@ body {
   animation: particlesFloat 30s linear infinite;
   opacity: 0.75;
 }
+*/
 
 @keyframes auroraFloat1 {
   0% {
@@ -147,3 +151,7 @@ body {
 .animate-bounce-horizontal {
   animation: bounce-horizontal 1.5s ease-in-out infinite;
 }
+
+
+
+
