@@ -39,8 +39,8 @@ export default function AnimatedGrid() {
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
       // Draw animated grid
-      ctx.strokeStyle = 'rgba(255, 255, 255, 0.1)';
-      ctx.lineWidth = 1;
+      ctx.strokeStyle = 'rgba(255, 255, 255, 0.02)';
+      ctx.lineWidth = 0.5;
 
       // Vertical lines
       for (let x = 0; x <= canvas.width; x += gridSize) {
@@ -61,14 +61,14 @@ export default function AnimatedGrid() {
       }
 
       // Add glowing dots at intersections
-      ctx.fillStyle = 'rgba(255, 255, 255, 0.3)';
+      ctx.fillStyle = 'rgba(255, 255, 255, 0.08)';
       for (let x = 0; x <= canvas.width; x += gridSize) {
         for (let y = 0; y <= canvas.height; y += gridSize) {
           const xOffset = Math.sin(time * 0.002 + x * 0.01) * 10;
           const yOffset = Math.cos(time * 0.002 + y * 0.01) * 10;
           const pulse = Math.sin(time * 0.005 + x * 0.02 + y * 0.02) * 0.5 + 0.5;
           
-          ctx.globalAlpha = pulse * 0.6;
+          ctx.globalAlpha = pulse * 0.15;
           ctx.beginPath();
           ctx.arc(x + xOffset, y + yOffset, 2, 0, Math.PI * 2);
           ctx.fill();
@@ -95,3 +95,7 @@ export default function AnimatedGrid() {
     />
   );
 }
+
+
+
+
