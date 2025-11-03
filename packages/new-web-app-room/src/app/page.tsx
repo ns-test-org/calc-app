@@ -78,7 +78,7 @@ export default function Calculator() {
   };
 
   return (
-    <div className="min-h-screen bg-black flex items-center justify-center p-4">
+    <div className="min-h-screen bg-orange-500 flex items-center justify-center p-4">
       <div className="bg-white rounded-2xl shadow-2xl p-6 w-full max-w-sm">
         <h1 className="text-2xl font-bold text-center text-gray-800 mb-6">Calculator</h1>
         
@@ -207,6 +207,7 @@ export default function Calculator() {
     </div>
   );
 }
+
 
 
 
