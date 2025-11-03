@@ -184,7 +184,7 @@ export default function Calculator() {
           </button>
           <button
             onClick={performCalculation}
-            className="row-span-2 bg-blue-500 hover:bg-blue-600 text-white font-semibold py-4 px-4 rounded-lg transition-colors"
+            className="row-span-2 bg-purple-500 hover:bg-purple-600 text-white font-semibold py-4 px-4 rounded-lg transition-colors"
           >
             =
           </button>
@@ -207,5 +207,6 @@ export default function Calculator() {
     </div>
   );
 }
+
 
 
